@@ -38,15 +38,15 @@
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       display: flex; align-items: center; justify-content: space-between;
       padding: 0 5%;
-      height: 70px;
+      height: 84px;
       background: rgba(255,255,255,0.97);
       backdrop-filter: blur(14px);
       border-bottom: 1px solid rgba(0,0,0,0.08);
       box-shadow: 0 1px 20px rgba(0,0,0,0.06);
     }
-    nav img.logo { height: 44px; }
+    nav img.logo { height: 56px; }
     nav a {
-      color: #3A5068; font-size: 0.88rem; letter-spacing: 0.08em;
+      color: #3A5068; font-size: 1.1rem; letter-spacing: 0.08em;
       text-decoration: none; text-transform: uppercase; transition: color 0.2s;
     }
     nav a:hover { color: var(--gold); }
@@ -54,9 +54,9 @@
     .nav-cta {
       border: 1px solid var(--gold);
       color: var(--gold) !important;
-      padding: 0.55rem 1.4rem;
+      padding: 0.7rem 1.7rem;
       border-radius: 2px;
-      font-size: 0.82rem !important;
+      font-size: 1.05rem !important;
     }
     .nav-cta:hover { background: rgba(184,150,90,0.10) !important; }
 
@@ -79,7 +79,7 @@
       width: 1px; height: 100%;
       background: linear-gradient(to bottom, transparent, rgba(184,150,90,0.3) 40%, transparent);
     }
-    .hero-content { position: relative; z-index: 1; max-width: 800px; }
+    .hero-content { position: relative; z-index: 1; max-width: 1100px; margin: 0 auto; }
     .eyebrow {
       font-size: 0.8rem; letter-spacing: 0.2em; text-transform: uppercase;
       color: var(--gold); margin-bottom: 2rem;
@@ -97,33 +97,33 @@
     }
     h1 em { font-style: italic; color: var(--blue-lt); }
     .hero-sub {
-      font-size: 1.2rem; color: var(--muted);
-      max-width: 540px; line-height: 1.8; margin-bottom: 3.5rem;
+      font-size: 2.1rem; color: var(--muted);
+      max-width: 1000px; line-height: 1.6; margin-bottom: 4rem;
     }
     .hero-stat-row {
       display: flex; gap: 3.5rem; flex-wrap: wrap; margin-bottom: 4rem;
     }
-    .stat { border-left: 1px solid var(--gold); padding-left: 1.2rem; }
+    .stat { border-left: 1px solid var(--gold); padding-left: 1.8rem; }
     .stat-num {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 2.2rem; font-weight: 400;
-      color: var(--white); line-height: 1; display: block; margin-bottom: 0.3rem;
+      font-size: 4.2rem; font-weight: 400;
+      color: var(--white); line-height: 1; display: block; margin-bottom: 0.7rem;
     }
-    .stat-label { font-size: 0.82rem; color: var(--muted); letter-spacing: 0.04em; }
+    .stat-label { font-size: 1.7rem; color: var(--muted); letter-spacing: 0.04em; }
     .btn-primary {
       display: inline-block;
       background: var(--gold); color: var(--navy) !important;
-      padding: 1rem 2.5rem; border-radius: 2px;
-      font-size: 0.88rem; font-weight: 500; letter-spacing: 0.12em;
+      padding: 1.6rem 4rem; border-radius: 2px;
+      font-size: 1.3rem; font-weight: 500; letter-spacing: 0.12em;
       text-transform: uppercase; text-decoration: none;
       transition: background 0.2s, transform 0.15s;
     }
     .btn-primary:hover { background: var(--gold-lt); transform: translateY(-1px); }
 
     /* ── SHARED ── */
-    section { padding: 6rem 5%; }
+    section { padding: 4rem 5%; }
     .section-label {
-      font-size: 0.76rem; letter-spacing: 0.22em; text-transform: uppercase;
+      font-size: 1.5rem; letter-spacing: 0.22em; text-transform: uppercase;
       color: var(--gold); margin-bottom: 1rem;
     }
     h2 {
@@ -136,14 +136,16 @@
     /* ── SERVICES ── */
     #services { background: var(--navy-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
     .services-inner { max-width: 1100px; margin: 0 auto; }
+    #services h2 { margin-bottom: 1rem; }
+    #services .divider { margin-bottom: 1rem; }
     .services-grid {
       display: grid; grid-template-columns: 1fr 1fr;
-      gap: 2px; margin-top: 3rem;
+      gap: 2px; margin-top: 0.8rem;
     }
     .service-card {
       background: var(--navy);
       border: 1px solid var(--border);
-      padding: 3.5rem;
+      padding: 2rem 3.5rem 3.5rem;
       position: relative; overflow: hidden;
       transition: border-color 0.3s;
     }
@@ -157,15 +159,15 @@
     .service-card:hover::before { transform: scaleX(1); }
     .service-num {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 4rem; font-weight: 300;
-      color: rgba(184,150,90,0.12); line-height: 1; margin-bottom: 1.5rem;
+      font-size: 6rem; font-weight: 400;
+      color: rgba(184,150,90,0.65); line-height: 1; margin-bottom: 0.5rem;
     }
     .service-card h3 {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 1.9rem; font-weight: 400;
-      margin-bottom: 1rem;
+      font-size: 3rem; font-weight: 400;
+      margin-bottom: 1.4rem;
     }
-    .service-card p { color: var(--muted); font-size: 1rem; line-height: 1.8; }
+    .service-card p { color: var(--muted); font-size: 1.65rem; line-height: 1.65; }
 
     /* ── CONTACT ── */
     #contact {
@@ -173,10 +175,10 @@
       border-top: 1px solid var(--border);
       text-align: center;
     }
-    .contact-inner { max-width: 600px; margin: 0 auto; }
-    #contact p { color: var(--muted); margin-bottom: 2.5rem; font-size: 1.05rem; line-height: 1.8; }
+    .contact-inner { max-width: 800px; margin: 0 auto; }
+    #contact p { color: var(--muted); margin-bottom: 2.5rem; font-size: 1.9rem; line-height: 1.6; }
     .contact-email {
-      display: block; font-size: 1.05rem;
+      display: block; font-size: 1.55rem;
       color: var(--gold-lt); text-decoration: none;
       margin-top: 2rem; letter-spacing: 0.03em;
       transition: color 0.2s;
@@ -232,26 +234,24 @@
     <div class="hero-bg"></div>
     <div class="hero-line"></div>
     <div class="hero-content fade-up">
-      <p class="eyebrow">M&amp;A Strategy &amp; Value Creation</p>
-      <h1>Where <em>AI and science</em><br>meet M&amp;A strategy</h1>
+      <h1>Where <em>AI and science</em><br>meet corporate strategy</h1>
       <p class="hero-sub">
-        Bayestra enhances strategic judgment with AI — helping executives make smarter acquisition decisions and unlock shareholder value.
+        Bayestra enhances judgment with AI &amp; science, helping C-suite executives unlock shareholder value.
       </p>
       <div class="hero-stat-row">
         <div class="stat">
           <span class="stat-num">3,000+</span>
-          <span class="stat-label">Companies analysed</span>
+          <span class="stat-label">Companies analyzed</span>
         </div>
         <div class="stat">
-          <span class="stat-num">~50%</span>
-          <span class="stat-label">Of M&amp;A deals destroy value</span>
+          <span class="stat-num">5 years</span>
+          <span class="stat-label">Of R&amp;D</span>
         </div>
         <div class="stat">
-          <span class="stat-num">100k+</span>
-          <span class="stat-label">Scientific studies</span>
+          <span class="stat-num">Goldman Sachs</span>
+          <span class="stat-label">&amp; Yale pedigree</span>
         </div>
       </div>
-      <a href="mailto:benoit.mercereau@bayestra.com?subject=Discovery%20Meeting%20Request" class="btn-primary">Request a Discovery Meeting</a>
     </div>
   </header>
 
@@ -259,18 +259,18 @@
   <section id="services">
     <div class="services-inner">
       <p class="section-label fade-up">What We Do</p>
-      <h2 class="fade-up">Two ways to create value</h2>
+      <h2 class="fade-up">Two paths to higher shareholder value</h2>
       <div class="divider fade-up"></div>
       <div class="services-grid">
         <div class="service-card fade-up">
           <div class="service-num">01</div>
-          <h3>M&amp;A Analytics</h3>
-          <p>We quantify synergies, rank acquisition targets objectively, learn from comparable past transactions, and identify the right advisors — all powered by AI and rigorous science.</p>
+          <h3>360° Value Creation</h3>
+          <p>The only board-ready roadmap that quantifies every value creation lever — operational, strategic, and governance — using AI and proprietary science.</p>
         </div>
         <div class="service-card fade-up">
           <div class="service-num">02</div>
-          <h3>360° Value Creation</h3>
-          <p>A holistic AI-driven framework covering operational efficiency, corporate actions, and governance — delivered as a board-ready, quantified roadmap in a fraction of the time.</p>
+          <h3>M&amp;A Analytics</h3>
+          <p>Where traditional advisors rely on judgment, we quantify — total value creation, synergies, and market reaction.</p>
         </div>
       </div>
     </div>
@@ -280,11 +280,11 @@
   <section id="contact">
     <div class="contact-inner fade-up">
       <p class="section-label">Contact</p>
-      <h2>Make your next<br>acquisition count</h2>
+      <h2>Your next value creation<br>opportunity starts here</h2>
       <div class="divider" style="margin: 1rem auto 2rem;"></div>
-      <p>We begin with a no-commitment discovery meeting to understand your priorities.</p>
-      <a href="mailto:benoit.mercereau@bayestra.com?subject=Discovery%20Meeting%20Request" class="btn-primary">Request a Meeting</a>
-      <a href="mailto:benoit.mercereau@bayestra.com" class="contact-email">benoit.mercereau@bayestra.com</a>
+      <p>No commitment — just clarity.</p>
+      <a href="mailto:contact@bayestra.com?subject=Discovery%20Meeting%20Request" class="btn-primary">Request a Meeting</a>
+      <a href="mailto:contact@bayestra.com" class="contact-email">contact@bayestra.com</a>
     </div>
   </section>
 
@@ -296,19 +296,20 @@
     <div class="footer-bottom">
       <p>© 2026 Bayestra — Arvella, ORIAS No. 834216350 (CNCGP)</p>
       <div class="footer-links">
-        <a href="mailto:benoit.mercereau@bayestra.com">benoit.mercereau@bayestra.com</a>
+        <a href="mailto:contact@bayestra.com">contact@bayestra.com</a>
         <a href="legal.html">Legal Notice</a>
-        <a href="legal.html">Mentions Légales</a>
       </div>
     </div>
   </footer>
 
   <script>
-    const obs = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-    }, { threshold: 0.12 });
-    document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+    // Simple fade-up on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
   </script>
-
 </body>
 </html>
